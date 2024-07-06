@@ -20,4 +20,17 @@ function iss_score() {
     document.getElementById("iss_activation").innerHTML = sumarr(iss_rai);
 }
 
+function zero_getElArr(raw_arr) {
+    const arr = Array.from(raw_arr);
+    for (let v of arr) {
+	v.value = 0;
+    }
+}
+
+function iss_clear() {
+    zero_getElArr(iss_rpc);
+    zero_getElArr(iss_rdi);
+    zero_getElArr(iss_rwb);
+    zero_getElArr(iss_rai);
+}
 // alert for pop-up
