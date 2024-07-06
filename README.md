@@ -11,12 +11,15 @@ Don't use any of this for self-diagnosis, use a doctor. I checked the research t
 
 If you're not sure about something from one of these tests, ask and appropriate doctor or nurse for help. If you think you can't afford one, contact local public health services and see if they can direct you to help.
 
-To Do:
-- make into an installable portable web app, remove need to be online or have active phone plan after it is installed.
+To Do to finish V1:
 - clear/erase/zero button to clear out last-used responses, keep them from discovery by others.
+- make into an installable portable web app, remove need to be online or have active phone plan after it is installed.
 - care plan triggers: input screen, pop-up if triggered.
+
+To Do after V1:
 - investigate adding security against creepers and abusers, especially for the health plan and trigger levels.
 - security check, try to prevent this from running or embedded in an invasive environment.
+- make is possible to only show assessments for which triggers or plan information have been entered.
 
 To Avoid:
 - self-diagnosis: no "default" triggers / state labels.
