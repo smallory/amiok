@@ -2,8 +2,7 @@
   "name": "amiok",
   "short_name": "AmIOk",
   "description": "Mental state tracking app to support action plans.",
-  "theme_color": "#B12A34",
-  "background_color": "#B12A34"
+  "start_url": "/amiok/index.html",
   "display": "standalone",
   "icons": [
     {
