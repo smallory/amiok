@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <script src="score.js" ></script>
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <title>Internal State Survey</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <section class="tab_container">
+	
+        <input type="radio" id="Overview" class="tab_input" name="tab_group" checked="checked">
+        <label for="Overview" class="tab_label">Overview</label>
+        <div class="tab_content">
+	  <h3>You can be OK. Follow your plan.</h3>
+	  <p>It can be hard to know what you need any given day. This app tries to help you track your mental needs, so your doctors can help you better.</p><br/>
+	  
+	  <p>This app is intended to be used as support for an action plan that you develop with support from medical professionals. The rating scales included here are ones you can use for free, because the researchers that built and tested them also shared them. See the license information for more details.</p><br/>
+
+	  <p>Don't use any of this for self-diagnosis, use a doctor. I checked the research to make sure these tests can support care after you know what's impacting you.</p><br/>
+
+	  <p>If you're not sure about something from one of these tests, ask and appropriate doctor or nurse for help. If you think you can't afford one, contact local public health services and see if they can direct you to help.</p><br/>
+	</div>
+
+        <input type="radio" id="iss" class="tab_input" name="tab_group">
+        <label for="iss" class="tab_label">I.S.S.</label>
+        <div class="tab_content">
+	  <h1>Internal State Survey</h1>
+	  <div name="instructions">
+	  </div>
+	  <p>For each of the following statements, move the marker to the place on the line that best describes the way you have felt <bold>over the past 24 hours</bold>. While there may have been some changes during that time, try to give a single summary rating for each item.</p>
+	  <div class="issinput">
+	    <div>
+	      <h4>Today my mood is changeable.</h4>
+	      <p class="barend">Not at all</br>Rarely</p>
+	      <input type="range" id="q01" name="iss_pc" list="markers" min="0" max="100"  value="0" style="vertical-align: top;"/>
+	      <p class="barend">Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel irritable.</h4>
+	      <p>Not at all</br>Rarely</p>
+	      <input type="range" id="q02" name="iss_pc" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel like a capable person.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q03" name="iss_wb" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel like people are out to get me.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q04" name="iss_pc" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I actually feel great inside.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q05" name="iss_wb" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel impulsive.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q06" name="iss_ai" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel depressed.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q07" name="iss_di" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today my thoughts are going fast.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q08" name="iss_ai" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today it seems like nothing will ever work out for me.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q09" name="iss_di" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel overactive.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q10" name="iss_ai" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel as if the world is against me.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q11" name="iss_pc" list="markers" min="0" max="100" value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel "sped up" inside.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q12" name="iss_ai" list="markers" min="0" max="100" value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel restless.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q13" name="iss_ai" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel argumentative.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q14" name="iss_pc" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel energized.</h4>
+ 	      <p>Not at all<br/>Rarely</p>
+	      <input type="range" id="q15" name="iss_wb" list="markers" min="0" max="100"  value="0"/>
+	      <p>Very much so<br/>Much of the time</p>
+	    </div><div>
+	      <h4>Today I feel:</h4>
+              <p>Depreesed,<br/>Down</p>
+	      <input type="range" id="q16" name="iss_global" list="feelmarkers" min="-100" max="100"  value="0"/>
+	      <p>Manic,<br/>High</p>
+	      <p style="width: 100%;text-align: center;">normal</p>
+	    </div>
+	    <datalist id="markers">
+	      <option value="0"></option>
+	      <option value="10"/><option value="20"/><option value="30"/><option value="40"/>
+	      <option value="50"></option>
+	      <option value="60"/><option value="70"/><option value="80"/><option value="90"/>
+	      <option value="100"></option>
+	    </datalist>
+	    <datalist id="feelmarkers">
+	      <option value="-100" ></option>
+	      <option value="-80"/><option value="-60"/><option value="-40"/><option value="-20"/>
+	      <option value="0" style="text-align: center;"></option>
+	      <option value="20"/><option value="40"/><option value="60"/><option value="80"/>
+	      <option value="100"></option>
+	    </datalist>
+	  </div>
+	  <hr/>
+	  <div name="score" style="display: table;width: 100%;">
+	    <br/>
+	    <ul style="list-style: none; margin: 0;">
+              <li style="display:inline-block;width:19%;text-align: center;">
+		<input type="button" name="iss_submit" value="Caclculate scores." onclick="iss_score();" /></li>
+              <li style="display:inline-block;width:19%;text-align: center;">
+		Conflict: <output class="score-c" id="iss_conflict"></output></li>
+              <li style="display:inline-block;width:19%;text-align: center;">
+		Depression: <output class="score-d" id="iss_depression"></output></li>
+              <li style="display:inline-block;width:19%;text-align: center;">
+		Activation: <output class="score-m" id="iss_activation"></output></li>
+              <li style="display:inline-block;width:19%;text-align: center;">
+		Wellbeing: <output class="score-w" id="iss_wellbeing" /></output></li>
+</ul>
+	  </div>
+        </div>
+
+        <input type="radio" id="DASS" class="tab_input" name="tab_group">
+        <label for="DASS" class="tab_label">DASS</label>
+        <div class="tab_content">
+	  <p>
+	    Short version/DASS21<br/>
+	    Please read each statement and circle a number 0, 1, 2 or 3 which indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement.
+	  </p>
+	  The rating scale is as follows:
+	    <dl>
+	      <dt>0<dd>Did not apply to me at all</dd></dt>
+	      <dt>1</dt><dd>Applied to me to some degree, or some of the time</dd>
+	      <dt>2</dt><dd>Applied to me to a considerable degree, or a good part of time</dd>
+	      <dt>3</dt><dd>Applied to me very much, or most of the time</dd>
+	    </dl>
+	    <br/>
+	  <dl>
+	    <dt>I found it hard to wind down</dt><dd>
+	      <input type="radio" id="a1" name="dass_01" class="number_box" value="0" >
+	      <label class="numlabel" for="a1">0</label>
+	      <input type="radio" id="b1" name="dass_01" class="number_box" value="1" >
+	      <label class="numlabel" for="b1">1</label>
+	      <input type="radio" id="c1" name="dass_01" class="number_box" value="2" >
+	      <label class="numlabel" for="c1">2</label>
+	      <input type="radio" id="d1" name="dass_01" class="number_box" value="3" >
+	      <label class="numlabel" for="d1">3</label>
+	    </dd>
+	    <dt>I was aware of dryness of my mouth</dt><dd>
+	      <input type="radio" id="a2" name="dass_02" class="number_box" value="0" >
+	      <label class="numlabel" for="a2">0</label>
+	      <input type="radio" id="b2" name="dass_02" class="number_box" value="1" >
+	      <label class="numlabel" for="b2">1</label>
+	      <input type="radio" id="c2" name="dass_02" class="number_box" value="2" >
+	      <label class="numlabel" for="c2">2</label>
+	      <input type="radio" id="d2" name="dass_02" class="number_box" value="3" >
+	      <label class="numlabel" for="d2">3</label>
+	    </dd>
+	    <dt>I couldn't seem to experience any positive feeling at all</dt><dd>
+	      <input type="radio" id="a3" name="dass_03" class="number_box" value="0" >
+	      <label class="numlabel" for="a3">0</label>
+	      <input type="radio" id="b3" name="dass_03" class="number_box" value="1" >
+	      <label class="numlabel" for="b3">1</label>
+	      <input type="radio" id="c3" name="dass_03" class="number_box" value="2" >
+	      <label class="numlabel" for="c3">2</label>
+	      <input type="radio" id="d3" name="dass_03" class="number_box" value="3" >
+	      <label class="numlabel" for="d3">3</label></dd>
+	    <dt>I experienced breathing difficulty (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)</dt><dd>
+	      <input type="radio" id="a4" name="dass_04" class="number_box" value="0" >
+	      <label class="numlabel" for="a4">0</label>
+	      <input type="radio" id="b4" name="dass_04" class="number_box" value="1" >
+	      <label class="numlabel" for="b4">1</label>
+	      <input type="radio" id="c4" name="dass_04" class="number_box" value="2" >
+	      <label class="numlabel" for="c4">2</label>
+	      <input type="radio" id="d4" name="dass_04" class="number_box" value="3" >
+	      <label class="numlabel" for="d4">3</label></dd>
+	    <dt>I found it difficult to work up the initiative to do things</dt><dd>
+	      <input type="radio" id="a5" name="dass_02" class="number_box" value="0" >
+	      <label class="numlabel" for="a5">0</label>
+	      <input type="radio" id="b5" name="dass_05" class="number_box" value="1" >
+	      <label class="numlabel" for="b5">1</label>
+	      <input type="radio" id="c5" name="dass_05" class="number_box" value="2" >
+	      <label class="numlabel" for="c5">2</label>
+	      <input type="radio" id="d5" name="dass_05" class="number_box" value="3" >
+	      <label class="numlabel" for="d5">3</label></dd>
+	    <dt>I tended to over-react to situations</dt><dd>
+	      <input type="radio" id="a6" name="dass_06" class="number_box" value="0" >
+	      <label class="numlabel" for="a6">0</label>
+	      <input type="radio" id="b6" name="dass_06" class="number_box" value="1" >
+	      <label class="numlabel" for="b6">1</label>
+	      <input type="radio" id="c6" name="dass_06" class="number_box" value="2" >
+	      <label class="numlabel" for="c6">2</label>
+	      <input type="radio" id="d6" name="dass_06" class="number_box" value="3" >
+	      <label class="numlabel" for="d6">3</label></dd>
+	    <dt>I experienced trembling (eg, in the hands)</dt><dd>
+	      <input type="radio" id="a7" name="dass_07" class="number_box" value="0" >
+	      <label class="numlabel" for="a7">0</label>
+	      <input type="radio" id="b7" name="dass_07" class="number_box" value="1" >
+	      <label class="numlabel" for="b7">1</label>
+	      <input type="radio" id="c7" name="dass_07" class="number_box" value="2" >
+	      <label class="numlabel" for="c7">2</label>
+	      <input type="radio" id="d7" name="dass_07" class="number_box" value="3" >
+	      <label class="numlabel" for="d7">3</label></dd>
+	    <dt>I felt that I was using a lot of nervous energy</dt><dd>
+	      <input type="radio" id="a8" name="dass_08" class="number_box" value="0" >
+	      <label class="numlabel" for="a8">0</label>
+	      <input type="radio" id="b8" name="dass_08" class="number_box" value="1" >
+	      <label class="numlabel" for="b8">1</label>
+	      <input type="radio" id="c8" name="dass_08" class="number_box" value="2" >
+	      <label class="numlabel" for="c8">2</label>
+	      <input type="radio" id="d8" name="dass_08" class="number_box" value="3" >
+	      <label class="numlabel" for="d8">3</label></dd>
+	    <dt>I was worried about situations in which I might panic and make a fool of myself</dt><dd>
+	      <input type="radio" id="a9" name="dass_09" class="number_box" value="0" >
+	      <label class="numlabel" for="a9">0</label>
+	      <input type="radio" id="b9" name="dass_09" class="number_box" value="1" >
+	      <label class="numlabel" for="b9">1</label>
+	      <input type="radio" id="c9" name="dass_09" class="number_box" value="2" >
+	      <label class="numlabel" for="c9">2</label>
+	      <input type="radio" id="d9" name="dass_09" class="number_box" value="3" >
+	      <label class="numlabel" for="d9">3</label></dd>
+	    <dt>I felt that I had nothing to look forward to</dt><dd>
+	      <input type="radio" id="aq" name="dass_10" class="number_box" value="0" >
+	      <label class="numlabel" for="aq">0</label>
+	      <input type="radio" id="bq" name="dass_10" class="number_box" value="1" >
+	      <label class="numlabel" for="bq">1</label>
+	      <input type="radio" id="cq" name="dass_10" class="number_box" value="2" >
+	      <label class="numlabel" for="cq">2</label>
+	      <input type="radio" id="dq" name="dass_10" class="number_box" value="3" >
+	      <label class="numlabel" for="dq">3</label></dd>
+	    <dt>I found myself getting agitated</dt><dd>
+	      <input type="radio" id="aw" name="dass_11" class="number_box" value="0" >
+	      <label class="numlabel" for="aw">0</label>
+	      <input type="radio" id="bw" name="dass_11" class="number_box" value="1" >
+	      <label class="numlabel" for="bw">1</label>
+	      <input type="radio" id="cw" name="dass_11" class="number_box" value="2" >
+	      <label class="numlabel" for="cw">2</label>
+	      <input type="radio" id="dw" name="dass_11" class="number_box" value="3" >
+	      <label class="numlabel" for="dw">3</label></dd>
+	    <dt>I found it difficult to relax</dt><dd>
+	      <input type="radio" id="ae" name="dass_12" class="number_box" value="0" >
+	      <label class="numlabel" for="ae">0</label>
+	      <input type="radio" id="be" name="dass_12" class="number_box" value="1" >
+	      <label class="numlabel" for="be">1</label>
+	      <input type="radio" id="ce" name="dass_12" class="number_box" value="2" >
+	      <label class="numlabel" for="ce">2</label>
+	      <input type="radio" id="de" name="dass_12" class="number_box" value="3" >
+	      <label class="numlabel" for="de">3</label></dd>
+	    <dt>I felt down-hearted and blue</dt><dd>
+	      <input type="radio" id="ar" name="dass_13" class="number_box" value="0" >
+	      <label class="numlabel" for="ar">0</label>
+	      <input type="radio" id="br" name="dass_13" class="number_box" value="1" >
+	      <label class="numlabel" for="br">1</label>
+	      <input type="radio" id="cr" name="dass_13" class="number_box" value="2" >
+	      <label class="numlabel" for="cr">2</label>
+	      <input type="radio" id="dr" name="dass_13" class="number_box" value="3" >
+	      <label class="numlabel" for="dr">3</label></dd>
+	    <dt>I was intolerant of anything that kept me from getting on with what I was doing</dt><dd>
+	      <input type="radio" id="at" name="dass_14" class="number_box" value="0" >
+	      <label class="numlabel" for="at">0</label>
+	      <input type="radio" id="bt" name="dass_14" class="number_box" value="1" >
+	      <label class="numlabel" for="bt">1</label>
+	      <input type="radio" id="ct" name="dass_14" class="number_box" value="2" >
+	      <label class="numlabel" for="ct">2</label>
+	      <input type="radio" id="dt" name="dass_14" class="number_box" value="3" >
+	      <label class="numlabel" for="dt">3</label></dd>
+	    <dt>I felt I was close to panic</dt><dd>
+	      <input type="radio" id="ay" name="dass_15" class="number_box" value="0" >
+	      <label class="numlabel" for="ay">0</label>
+	      <input type="radio" id="by" name="dass_15" class="number_box" value="1" >
+	      <label class="numlabel" for="by">1</label>
+	      <input type="radio" id="cy" name="dass_15" class="number_box" value="2" >
+	      <label class="numlabel" for="cy">2</label>
+	      <input type="radio" id="dy" name="dass_15" class="number_box" value="3" >
+	      <label class="numlabel" for="dy">3</label></dd>
+	    <dt>I was unable to become enthusiastic about anything</dt><dd>
+	      <input type="radio" id="au" name="dass_16" class="number_box" value="0" >
+	      <label class="numlabel" for="au">0</label>
+	      <input type="radio" id="bu" name="dass_16" class="number_box" value="1" >
+	      <label class="numlabel" for="bu">1</label>
+	      <input type="radio" id="cu" name="dass_16" class="number_box" value="2" >
+	      <label class="numlabel" for="cu">2</label>
+	      <input type="radio" id="du" name="dass_16" class="number_box" value="3" >
+	      <label class="numlabel" for="du">3</label></dd>
+	    <dt>I felt I wasn't worth much as a person</dt><dd>
+	      <input type="radio" id="ai" name="dass_17" class="number_box" value="0" >
+	      <label class="numlabel" for="ai">0</label>
+	      <input type="radio" id="bi" name="dass_17" class="number_box" value="1" >
+	      <label class="numlabel" for="bi">1</label>
+	      <input type="radio" id="ci" name="dass_17" class="number_box" value="2" >
+	      <label class="numlabel" for="ci">2</label>
+	      <input type="radio" id="di" name="dass_17" class="number_box" value="3" >
+	      <label class="numlabel" for="di">3</label></dd>
+	    <dt>I felt that I was rather touchy</dt><dd>
+	      <input type="radio" id="ao" name="dass_18" class="number_box" value="0" >
+	      <label class="numlabel" for="ao">0</label>
+	      <input type="radio" id="bo" name="dass_18" class="number_box" value="1" >
+	      <label class="numlabel" for="bo">1</label>
+	      <input type="radio" id="co" name="dass_18" class="number_box" value="2" >
+	      <label class="numlabel" for="co">2</label>
+	      <input type="radio" id="do" name="dass_18" class="number_box" value="3" >
+	      <label class="numlabel" for="do">3</label></dd>
+	    <dt>I was aware of the action of my heart in the absence of physical exertion (eg, sense of heart rate increase, heart missing a beat)</dt><dd>
+	      <input type="radio" id="ap" name="dass_19" class="number_box" value="0" >
+	      <label class="numlabel" for="a">0</label>
+	      <input type="radio" id="bp" name="dass_19" class="number_box" value="1" >
+	      <label class="numlabel" for="b">1</label>
+	      <input type="radio" id="cp" name="dass_19" class="number_box" value="2" >
+	      <label class="numlabel" for="c">2</label>
+	      <input type="radio" id="dp" name="dass_19" class="number_box" value="3" >
+	      <label class="numlabel" for="d">3</label></dd>
+	    <dt>I felt scared without any good reason</dt><dd>
+	      <input type="radio" id="aa" name="dass_20" class="number_box" value="0" >
+	      <label class="numlabel" for="aa">0</label>
+	      <input type="radio" id="ba" name="dass_20" class="number_box" value="1" >
+	      <label class="numlabel" for="ba">1</label>
+	      <input type="radio" id="ca" name="dass_20" class="number_box" value="2" >
+	      <label class="numlabel" for="ca">2</label>
+	      <input type="radio" id="da" name="dass_20" class="number_box" value="3" >
+	      <label class="numlabel" for="da">3</label></dd>
+	    <dt>I felt that life was meaningless</dt><dd>
+	      <input type="radio" id="as" name="dass_21" class="number_box" value="0" >
+	      <label class="numlabel" for="as">0</label>
+	      <input type="radio" id="bs" name="dass_21" class="number_box" value="1" >
+	      <label class="numlabel" for="bs">1</label>
+	      <input type="radio" id="cs" name="dass_21" class="number_box" value="2" >
+	      <label class="numlabel" for="cs">2</label>
+	      <input type="radio" id="ds" name="dass_21" class="number_box" value="3" >
+	      <label class="numlabel" for="ds">3</label></dd>
+	  </dl>
+        </div>
+
+        <input type="radio" id="license" class="tab_input" name="tab_group">
+        <label for="license" class="tab_label">Credits and License</label>
+        <div class="tab_content">
+	  <h3>Internal State Survey</h3>
+	  <div name="citation">
+	    Internal State Survey, Bauer M, et al. Arrhc Gen Psychiatry, 1991; 48:807-12.
+	  </div>
+	  <div name="unused">
+	    <br/>
+	    <h3>Couldn't use</h3>
+	    Things that came close to being included, but were not appropriate.
+	    <dl>
+	      <dt>Depression Anxiety Stress Scales (DASS)</dt>
+	      <dd>Designed for self-inventory, and open to use by all as long as it is limited to a defined group and not the general public. I don't know who needs this, so I can't gatekeep for them. Can't use.</dd>
+	      <dt>HAM-A</dt>
+	      <dd>Public domain, but not developed for self-reporting.</dd>
+	    </dl>
+	  </div>
+	  <div>
+	    <br/>
+	    <h3>Code resources used</h3>
+	    Layout code loosly based on https://www.corelayout.com/components/tabs.html, MIT license.
+	  </div>
+	</div>
+      </section>
+    </div>
+  </body>
+</html>
