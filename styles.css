@@ -57,6 +57,13 @@ option {
     width: 66%;
 }
 
+.sclear input[type=button] {
+    width: 49%;
+    margin: 0;
+    margin-top: 1.5ex;
+    text-align: center;
+}
+
 .numlabel {
     width: 20%;
     text-align: center;
