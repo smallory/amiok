@@ -58,9 +58,10 @@ option {
 }
 
 .sclear input[type=button] {
-    margin: 0 20% 0 20%;
-    margin-top: 1.5ex;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .numlabel {
