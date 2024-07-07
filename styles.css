@@ -59,7 +59,7 @@ option {
 
 .sclear input[type=button] {
     display: flex;
-    width: 50%;
+    width: 48%;
     justify-content: center;
     align-items: center;
 }
