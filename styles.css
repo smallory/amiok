@@ -58,8 +58,8 @@ option {
 }
 
 .sclear input[type=button] {
-    text-align: center;
     display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
