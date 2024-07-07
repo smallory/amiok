@@ -58,8 +58,7 @@ option {
 }
 
 .sclear input[type=button] {
-    width: 49%;
-    margin: 0;
+    margin: 0 20% 0 20%;
     margin-top: 1.5ex;
     text-align: center;
 }
