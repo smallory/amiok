@@ -77,20 +77,6 @@ option {
     border: .2em solid #383d04;
 }
 
-/* Importing static fonts */
-
-@font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Poppins Medium";
-    src: url(../fonts/Poppins-Medium.ttf) format("truetype");
-}
-
-/* END */
-
 /* Minimal CSS reset for browser compatibility */
 
 body {
