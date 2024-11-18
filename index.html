@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="amiok.webmanifest" />
   <head>
-    <title>AmIOk</title>
+    <title>Am I Ok?</title>
   </head>
   <body>
     <div class="main_container">
@@ -128,26 +128,25 @@
 	      <option value="100"></option>
 	    </datalist>
 	  </div>
-	  <hr/>
-	  <div>
-	  <div class="sclear"><input type="button" name="iss_submit" value="Caclculate scores." onclick="iss_score();" /></div>
-          <div class="sclear"><input type="button" name="iss_clear" value="Clear" onclick="iss_clear();" /></div>
+	  <div class="sclear">
+	  <input type="button" name="iss_submit" value="Caclculate scores." onclick="iss_score();" />
+          <input type="button" name="iss_clear" value="Clear" onclick="iss_clear();" />
 	  </div>
-	  <hr/>
 	  <div name="score" style="display: table;width: 100%;">
 	    <br/>
 	    <ul style="list-style: none; margin: 0;">
-              <li style="display:inline-block;width:24%;text-align: center;">
+              <li style="display:inline-block;width:25%;text-align: center;">
 		Conflict: <output class="score-c" id="iss_conflict"></output></li>
               <li style="display:inline-block;width:24%;text-align: center;">
 		Depression: <output class="score-d" id="iss_depression"></output></li>
               <li style="display:inline-block;width:24%;text-align: center;">
 		Activation: <output class="score-m" id="iss_activation"></output></li>
-              <li style="display:inline-block;width:24%;text-align: center;">
+              <li style="display:inline-block;width:25%;text-align: center;">
 		Wellbeing: <output class="score-w" id="iss_wellbeing" /></output></li>
 </ul>
 	  </div>
         </div>
+
 
         <input type="radio" id="license" class="tab_input" name="tab_group">
         <label for="license" class="tab_label">Credits and License</label>
