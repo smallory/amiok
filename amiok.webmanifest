@@ -1,7 +1,7 @@
 {
   "name": "amiok",
   "short_name": "AmIOk",
-  "description": "Mental state tracking app to support action plans.",
+  "description": "Mental state check to support action plans. Does not diagnose mental state scores, work out the meaning for you and plan for how to respond with a mental health providers. Private: nothing is stored, no information sent back to web, all inputs can be zero'd out with one click.",
   "start_url": "/amiok/index.html",
   "display": "standalone",
   "icons": [
